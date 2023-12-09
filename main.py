@@ -17,7 +17,7 @@ import threading
 window = Tk()
 window.title("Voice Based Email Sender")
 window.geometry("350x700")
-window.configure(bg="#f0f0f0")
+# window.configure(bg="#f0f0f0")
 
 # Creating a function to round the corners of the window
 def round_corners(window):
@@ -46,7 +46,7 @@ inbox_button = Button(window, text="Inbox", command=lambda: show_inbox(), bg="#0
 canvas.create_window(175, 85, window=inbox_button)
 
 # Creating the compose button
-compose_button = Button(window, text="Compose", command=lambda: show_compose(), bg="#00ff00", font=("Arial", 12))
+compose_button = Button(window, text="Compose", command=lambda: show_compose(), bg="#2C2C2C", font=("Arial", 12))
 canvas.create_window(175, 135, window=compose_button)
 
 # Creating the speech recognition function
